@@ -1,1 +1,19 @@
-/* ESTILOS DEL MAIN */
+.data-items-container{
+    display: flex;
+    gap: 1rem;
+}
+
+.tasks{
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form{
+    margin-bottom: 2rem;
+}
+
+.task{
+    display: flex;
+    gap: 1rem;
+}

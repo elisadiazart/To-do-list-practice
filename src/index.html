@@ -9,7 +9,28 @@
     <title>Vite Template</title>
   </head>
   <body>
-    <img src="assets/images/anubis.jpg" width="500px" alt="anubis" />
+    <header class="header">
+      <div class="banner"> </div>
+    </header>
+    <main>
+      <form class="form" id="create">
+        <input name="task"  type="text">
+      </form>
+      <div id="tasksContainer" class="tasks">
+        
+      </div>
+      <div class="data-items-container">
+        <div id="allItems"> X items left</div>
+        <div class="">Clear Completed</div>
+      </div>
+      <nav class="to-do-container">
+        <ul>
+          <li>All</li>
+          <li>Active</li>
+          <li>Completed</li>
+        </ul>
+      </nav>
+    </main>
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>
