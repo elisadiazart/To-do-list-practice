@@ -5,27 +5,37 @@
     <!-- PON UN FAVICON!!! -->
     <link rel="icon" type="image/svg+xml" href="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+
     <!-- CAMBIA EL TITLE!!! -->
     <title>Vite Template</title>
   </head>
   <body>
     <header class="header">
-      <div class="banner"> </div>
+      <div class="banner">TODO
+        <img class="icon" src="assets/images/icon-moon.svg" alt="">
+      </div>
     </header>
-    <main>
+    <main class="main">
       <form class="form" id="create">
-        <input name="task"  type="text">
+        <input class="input" name="task"  type="text" placeholder="Create a new to do...">
       </form>
       <div id="tasksContainer" class="tasks">
-        
+        <div class="task">
+          <input id="1675716406381" type="checkbox">
+          <label class="label" for="1675716406381">prueba</label>
+          <span class="close">X</span>
+        </div>
       </div>
       <div class="data-items-container">
         <div id="allItems"> X items left</div>
         <div class="">Clear Completed</div>
       </div>
-      <nav class="to-do-container">
-        <ul>
-          <li>All</li>
+      <nav >
+        <ul class="to-do-container">
+          <li class="active-filter">All</li>
           <li>Active</li>
           <li>Completed</li>
         </ul>

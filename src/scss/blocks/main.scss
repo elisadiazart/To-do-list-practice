@@ -1,12 +1,42 @@
+.main{
+    position: absolute;
+    top: 10rem;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.input{
+    border: none;
+    padding: 1rem 4rem 1rem 4rem;
+    border-radius: 6px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    width: 100%;
+}
+
+.input:focus{
+    outline: none;
+}
+
+.input::placeholder{
+    color:   hsl(236, 9%, 61%);
+}
+
 .data-items-container{
     display: flex;
     gap: 1rem;
 }
 
 .tasks{
-    margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    background-color: hsl(0, 0%, 98%); 
+    
 }
 
 .form{
@@ -14,6 +44,41 @@
 }
 
 .task{
+    padding: 1rem 2rem 1rem 2rem;
     display: flex;
-    gap: 1rem;
+    gap: .8rem;
+    border-bottom: 1px solid hsl(233, 11%, 84%);
+    color: black;
+    position: relative;
+    
+}
+
+.data-items-container{
+    display: flex;
+    background-color: hsl(0, 0%, 98%);
+    justify-content: space-between;
+    padding: 1rem 2rem 1rem 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: .9rem;
+    border-bottom: 1px solid hsl(233, 11%, 84%);
+    
+}
+
+.to-do-container{
+    display: flex;
+    background-color: hsl(0, 0%, 98%);
+    justify-content: space-between;
+    padding: 1rem 2rem 1rem 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+    border-radius: 0 0 6px 6px;
+    
+}
+
+.active-filter{
+    color: hsl(220, 98%, 61%);
+}
+
+.close{
+    position: absolute;
+    right: 2rem;
 }

@@ -34,6 +34,7 @@ const createTask = array => {
     closeElement.classList.add('close');
     newTask.id = task.id;
     newTask.type = 'checkbox';
+    newTaskLabel.classList.add('label')
     newTaskLabel.htmlFor = task.id;
     newTaskLabel.textContent = task.task;
     taskContainerDiv.append(newTask, newTaskLabel, closeElement);
@@ -42,9 +43,9 @@ const createTask = array => {
   printTask(fragment);
 };
 
-const deleteTask = idSelected => {
+const deleteTask = (idSelected, selectedTask) => {
   const filteredArray = taskArray.filter(object => object.id !== idSelected);
-  console.log(filteredArray);
+  selectedTask.remove()
 };
 
 createTasks.addEventListener('submit', e => {
@@ -55,6 +56,6 @@ createTasks.addEventListener('submit', e => {
 
 taskContainer.addEventListener('click', e => {
   if (e.target.classList.contains('close')) {
-    deleteTask(Number(e.target.previousSibling.htmlFor));
+    deleteTask(Number(e.target.previousSibling.htmlFor),e.target.parentElement);
   }
 });
