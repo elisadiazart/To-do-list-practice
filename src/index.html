@@ -14,7 +14,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="banner">TODO
+      <div class="banner">TO DO
         <img class="icon" src="assets/images/icon-moon.svg" alt="">
       </div>
     </header>
@@ -30,14 +30,14 @@
         </div>
       </div>
       <div class="data-items-container">
-        <div id="allItems"> X items left</div>
-        <div class="">Clear Completed</div>
+        <div id="allItems"> 0 items left</div>
+        <div id="clearCompleted" class="">Clear Completed</div>
       </div>
       <nav >
-        <ul class="to-do-container">
-          <li class="active-filter">All</li>
-          <li>Active</li>
-          <li>Completed</li>
+        <ul class="to-do-container" id="filters">
+          <li id="filterAll" class="active-filter filter">All</li>
+          <li id="filterActive" class="filter">Active</li>
+          <li id="filterCompleted" class="filter">Completed</li>
         </ul>
       </nav>
     </main>
